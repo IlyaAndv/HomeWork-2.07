@@ -36,6 +36,7 @@ final class QuestionsViewController: UIViewController {
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         updateQuestionsVC()
     }
     
@@ -78,7 +79,7 @@ final class QuestionsViewController: UIViewController {
             stackView?.isHidden = true
         }
         
-        title = "Вопрос № \(questionIndex + 1) из \(questions.count)."
+        title = "Вопрос № \(questionIndex + 1) из \(questions.count)"
         
         let currentQuestion = questions[questionIndex]
         let totalProgress = Float(questionIndex) / Float(questions.count)
